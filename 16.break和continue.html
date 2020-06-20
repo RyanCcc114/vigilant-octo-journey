@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for (var i = 2; i <= 100; i++) {
+
+            //创建一个布尔值，用来保存结果，默认i是质数
+            //Math.sqrt()对一个数开方
+            var flag = true
+            for (var j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    flag = false
+                    break
+                }
+
+            }
+
+            if (flag) {
+                document.write(i + "<br/>")
+            }
+        }          
+        /* 
+            36
+            1 12
+            2 18
+            3 12
+            4 9
+            6 6
+         */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
